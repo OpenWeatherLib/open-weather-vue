@@ -1,4 +1,4 @@
-import { Coordinates } from "@lib/models/coordinates";
+import { Coordinates } from "@/models/coordinates";
 
 export interface City {
   id: number;

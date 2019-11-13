@@ -1,4 +1,4 @@
-import { NitrogenDioxideDataHolder } from "@lib/models/nitrogen-dioxide-data-holder";
+import { NitrogenDioxideDataHolder } from "@/models/nitrogen-dioxide-data-holder";
 
 export interface NitrogenDioxideData {
     no2: NitrogenDioxideDataHolder;

@@ -1,11 +1,11 @@
-import { Clouds } from "@lib/models/clouds";
-import { Coordinates } from "@lib/models/coordinates";
-import { Main } from "@lib/models/main";
-import { Sys } from "@lib/models/sys";
-import { WeatherPart } from "@lib/models/weather-part";
-import { Wind } from "@lib/models/wind";
+import { Clouds } from "@/models/clouds";
+import { Coordinates } from "@/models/coordinates";
+import { Main } from "@/models/main";
+import { Sys } from "@/models/sys";
+import { WeatherPart } from "@/models/weather-part";
+import { Wind } from "@/models/wind";
 
-import WeatherCondition from "@lib/enums/weather-condition.enum";
+import WeatherCondition from "@/enums/weather-condition.enum";
 
 export interface WeatherCurrent {
     coord: Coordinates;

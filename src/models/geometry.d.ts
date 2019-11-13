@@ -1,5 +1,5 @@
-import { Coordinates2 } from "@lib/models/coordinates2";
-import { Viewport } from "@lib/models/viewport";
+import { Coordinates2 } from "@/models/coordinates2";
+import { Viewport } from "@/models/viewport";
 
 export interface Geometry {
     location_type: string;

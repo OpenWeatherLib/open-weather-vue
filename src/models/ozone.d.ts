@@ -1,4 +1,4 @@
-import { Coordinates3 } from "@lib/models/coordinates3";
+import { Coordinates3 } from "@/models/coordinates3";
 
 export interface Ozone {
     dateTime: Date;

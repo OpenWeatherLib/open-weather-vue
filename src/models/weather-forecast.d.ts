@@ -1,5 +1,5 @@
-import { City } from "@lib/models/city";
-import { WeatherForecastPart } from "@lib/models/weather-forecast-part";
+import { City } from "@/models/city";
+import { WeatherForecastPart } from "@/models/weather-forecast-part";
 
 export interface WeatherForecast {
     cod: string;
