@@ -71,7 +71,7 @@ const actions: ActionTree<CarbonMonoxideState, RootState> = {
 };
 
 export const carbonMonoxideModule: Module<CarbonMonoxideState, RootState> = {
-    namespaced: false,
+    namespaced: true,
     state,
     getters,
     mutations,

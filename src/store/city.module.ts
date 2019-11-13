@@ -52,7 +52,7 @@ const actions: ActionTree<CityState, RootState> = {
 };
 
 export const cityModule: Module<CityState, RootState> = {
-    namespaced: false,
+    namespaced: true,
     state,
     getters,
     mutations,

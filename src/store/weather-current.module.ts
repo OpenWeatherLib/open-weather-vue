@@ -55,7 +55,7 @@ const actions: ActionTree<WeatherCurrentState, RootState> = {
 };
 
 export const weatherCurrentModule: Module<WeatherCurrentState, RootState> = {
-    namespaced: false,
+    namespaced: true,
     state,
     getters,
     mutations,

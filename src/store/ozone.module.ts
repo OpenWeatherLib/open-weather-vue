@@ -71,7 +71,7 @@ const actions: ActionTree<OzoneState, RootState> = {
 };
 
 export const ozoneModule: Module<OzoneState, RootState> = {
-    namespaced: false,
+    namespaced: true,
     state,
     getters,
     mutations,

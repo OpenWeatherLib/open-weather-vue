@@ -71,7 +71,7 @@ const actions: ActionTree<NitrogenDioxideState, RootState> = {
 };
 
 export const nitrogenDioxideModule: Module<NitrogenDioxideState, RootState> = {
-    namespaced: false,
+    namespaced: true,
     state,
     getters,
     mutations,

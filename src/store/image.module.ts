@@ -58,7 +58,7 @@ const actions: ActionTree<ImageState, RootState> = {
 };
 
 export const imageModule: Module<ImageState, RootState> = {
-    namespaced: false,
+    namespaced: true,
     state,
     getters,
     mutations,

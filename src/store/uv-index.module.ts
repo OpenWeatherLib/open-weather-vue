@@ -55,7 +55,7 @@ const actions: ActionTree<UvIndexState, RootState> = {
 };
 
 export const uvIndexModule: Module<UvIndexState, RootState> = {
-    namespaced: false,
+    namespaced: true,
     state,
     getters,
     mutations,
