@@ -7,6 +7,10 @@
     "url": "https://github.com/JonasSchubert",
     "email": "jonas.schubert.projects@web.de"
   },
+  "funding": {
+    "type": "paypal",
+    "url": "https://www.paypal.me/GuepardoApps"
+  },
   "license": "MIT",
   "scripts": {
     "build": "vue-cli-service build",
@@ -31,7 +35,7 @@
     "vuex": "^3.1.2"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.22",
+    "@types/jest": "^24.0.23",
     "@vue/cli-plugin-babel": "^4.0.5",
     "@vue/cli-plugin-eslint": "^4.0.5",
     "@vue/cli-plugin-router": "^4.0.5",
@@ -45,7 +49,7 @@
     "@vuese/cli": "^2.8.3",
     "eslint": "^5.16.0",
     "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-vue": "^6.0.0",
+    "eslint-plugin-vue": "^6.0.1",
     "node-sass": "^4.13.0",
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.0",
