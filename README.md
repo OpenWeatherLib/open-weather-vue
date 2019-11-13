@@ -14,10 +14,10 @@
 [![CodeCoverageLines](https://img.shields.io/badge/Lines-0%25-red.svg)](src)
 
 Vue JS library for downloading and handling data from openweather.
-w
+
 ---
 
-![alt tag](screenshots/img001.png)
+// TODO add screenshots
 
 ---
 
@@ -27,10 +27,6 @@ Required api keys are
 
 - [x] [Unsplash](https://unsplash.com/)
 - [x] [openweathermap](https://openweathermap.org/)
-
-## Example
-
-You can find an example implementation [here](./src/app).
 
 ## Contributors
 
