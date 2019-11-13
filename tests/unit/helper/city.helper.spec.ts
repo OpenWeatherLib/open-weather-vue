@@ -1,4 +1,4 @@
-import { isCoordSet, isNameSet } from "@/helper/city-helper";
+import { isCoordSet, isNameSet } from "@/helper/city.helper";
 import { City } from "@/models";
 
 describe("isNameSet", () => {

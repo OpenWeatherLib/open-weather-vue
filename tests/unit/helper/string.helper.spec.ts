@@ -1,4 +1,4 @@
-import { isNullOrEmpty, format } from "@/helper/string-helper";
+import { isNullOrEmpty, format } from "@/helper/string.helper";
 
 describe("isNullOrEmpty", () => {
     test("should return true if string is empty", () => {

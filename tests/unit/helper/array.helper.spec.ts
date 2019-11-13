@@ -1,4 +1,4 @@
-import { any } from "@/helper/array-helper";
+import { any } from "@/helper/array.helper";
 
 describe("any", () => {
     test.each([

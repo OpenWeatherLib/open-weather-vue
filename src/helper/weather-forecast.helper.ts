@@ -1,6 +1,13 @@
 import WeatherCondition from "@/enums/weather-condition.enum";
-import { any } from "@/helper/array-helper";
+import { any } from "@/helper/array.helper";
 import { WeatherForecastPart } from "@/models";
+import { WeatherForecastState } from "@/store/weather-forecast.module";
+
+export const getWeatherForecastList = (state: WeatherForecastState): WeatherForecastPart[] => !!state.weatherForecast
+    ? !!state.filter
+        ? state.weatherForecast.list.filter((value: WeatherForecastPart) => JSON.stringify(value).includes(`${state.filter}`))
+        : state.weatherForecast.list
+    : [];
 
 export const mostWeatherCondition = (list: WeatherForecastPart[]): WeatherCondition => {
     if (any(list)) {

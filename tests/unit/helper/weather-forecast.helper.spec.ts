@@ -1,7 +1,11 @@
 import WeatherCondition from "@/enums/weather-condition.enum";
 import { WeatherForecastPart, WeatherPart } from "@/models";
 
-import { mostWeatherCondition } from "@/helper/weather-forecast-helper";
+import { mostWeatherCondition } from "@/helper/weather-forecast.helper";
+
+describe("getWeatherForecastList", () => {
+    test.todo("getWeatherForecastList");
+});
 
 describe("mostWeatherCondition", () => {
     test.each([
