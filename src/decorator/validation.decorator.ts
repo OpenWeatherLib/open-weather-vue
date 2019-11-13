@@ -14,7 +14,7 @@ export const required = <T>(type: ValidationRequiredType, prohibitedValues: T[] 
 };
 
 export const validate = <T>(defaultReturnValue: T): any => (target: any, propertyName: string, descriptor: TypedPropertyDescriptor<Function>): any => {
-    const method: Function = descriptor.value;
+    const method: Function | undefined = descriptor.value;
 
     descriptor.value = function (): any {
         const requiredParameters: any[] = Reflect.getOwnMetadata(requiredMetadataKey, target, propertyName);
@@ -51,6 +51,6 @@ export const validate = <T>(defaultReturnValue: T): any => (target: any, propert
             }
         }
 
-        return method.apply(this, arguments);
+        return !!method ? method.apply(this, arguments) : defaultReturnValue;
     };
 };
