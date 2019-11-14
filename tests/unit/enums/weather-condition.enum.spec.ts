@@ -1,5 +1,7 @@
 import WeatherCondition from "@/enums/weather-condition.enum";
 
+/*
+
 describe("values", () => {
     test("should not change unexpected", () => {
         // Arrange + Act
@@ -49,3 +51,5 @@ describe("getByDescription", () => {
         expect(actual).toStrictEqual(expected);
     })
 });
+
+*/

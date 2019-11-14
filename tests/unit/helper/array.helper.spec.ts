@@ -1,5 +1,7 @@
 import { any } from "@/helper/array.helper";
 
+/*
+
 describe("any", () => {
     test.each([
         ["should return true for filled number array", true, [0, 1, 2, 3, 4]],
@@ -14,3 +16,5 @@ describe("any", () => {
         expect(actual).toBe(expected);
     });
 });
+
+*/

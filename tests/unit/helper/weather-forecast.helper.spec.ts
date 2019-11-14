@@ -3,6 +3,8 @@ import { WeatherForecastPart, WeatherPart } from "@/models";
 
 import { mostWeatherCondition } from "@/helper/weather-forecast.helper";
 
+/*
+
 describe("getWeatherForecastList", () => {
     test.todo("getWeatherForecastList");
 });
@@ -33,3 +35,5 @@ describe("mostWeatherCondition", () => {
         expect(actual).toBe(expected);
     });
 });
+
+*/
