@@ -17,7 +17,9 @@ Vue JS library for downloading and handling data from openweather.
 
 ---
 
-// TODO add screenshots
+![alt tag](screenshots/example-city.png)
+![alt tag](screenshots/example-current-weather.png)
+![alt tag](screenshots/example-uv-index.png)
 
 ---
 
