@@ -18,7 +18,6 @@ import Component from "vue-class-component";
 import { WeatherCurrent } from "@/models";
 
 @Component({
-  components: {},
   computed: {
     weatherCurrent(): WeatherCurrent {
       return this.$store.getters["weatherCurrentModule/weatherCurrent"];

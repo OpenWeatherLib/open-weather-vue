@@ -18,7 +18,6 @@ import Component from "vue-class-component";
 import { City } from "@/models";
 
 @Component({
-  components: {},
   computed: {
     city(): City {
       return this.$store.getters["cityModule/city"];

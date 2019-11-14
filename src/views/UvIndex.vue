@@ -20,7 +20,6 @@ import Component from "vue-class-component";
 import { UvIndex } from "@/models";
 
 @Component({
-  components: {},
   computed: {
     uvIndex(): UvIndex {
       return this.$store.getters["uvIndexModule/uvIndex"];
