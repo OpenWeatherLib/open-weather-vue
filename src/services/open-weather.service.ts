@@ -97,7 +97,8 @@ class OpenWeatherService {
             .pipe(
                 map((response: WeatherForecast) => {
                     if (!!response) {
-                        response.list.forEach((weatherForecastPart: WeatherForecastPart) => weatherForecastPart.weatherCondition = WeatherCondition.getByDescription(weatherForecastPart.weather[0].description));
+                        response.list.forEach((weatherForecastPart: WeatherForecastPart) =>
+                            weatherForecastPart.weatherCondition = WeatherCondition.getByDescription(weatherForecastPart.weather[0].description));
                     }
                     return response;
                 }));
