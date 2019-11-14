@@ -11,8 +11,18 @@ export interface CityState {
     isLoading?: boolean;
 }
 
+// TODO Remove dummy data
 const state: CityState = {
-    city: undefined,
+    city: {
+        id: 1234567,
+        name: "Nuremberg",
+        country: "Germany",
+        population: 518365,
+        coord: {
+            lat: 49.45,
+            lon: 11.083333
+        }
+    },
     error: undefined,
     isLoading: false
 };

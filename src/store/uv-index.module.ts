@@ -11,10 +11,17 @@ export interface UvIndexState {
     uvIndex?: UvIndex;
 }
 
+// TODO Remove dummy data
 const state: UvIndexState = {
     error: undefined,
     isLoading: false,
-    uvIndex: undefined
+    uvIndex: {
+        lat: 49.45,
+        lon: 11.083333,
+        date_iso: "",
+        date: 0,
+        value: 3.48
+    }
 };
 
 const getters: GetterTree<UvIndexState, RootState> = {

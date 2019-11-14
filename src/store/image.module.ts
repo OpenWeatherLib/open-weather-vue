@@ -11,10 +11,11 @@ export interface ImageState {
     url?: string;
 }
 
+// TODO Remove dummy data
 const state: ImageState = {
     error: undefined,
     isLoading: false,
-    url: undefined
+    url: "https://images.unsplash.com/photo-1571838587418-a5f0b80419ba?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM3MTE5fQ"
 };
 
 const getters: GetterTree<ImageState, RootState> = {

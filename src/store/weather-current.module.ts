@@ -1,6 +1,7 @@
 import { of } from "rxjs";
 import { catchError, take } from "rxjs/operators";
 import { ActionTree, GetterTree, Module, MutationTree } from "vuex";
+import WeatherCondition from "@/enums/weather-condition.enum";
 import { City, WeatherCurrent } from "@/models";
 import { openWeatherService } from "@/services";
 import { RootState } from "./root-state";
@@ -11,10 +12,48 @@ export interface WeatherCurrentState {
     weatherCurrent?: WeatherCurrent;
 }
 
+// TODO Remove dummy data
 const state: WeatherCurrentState = {
     error: undefined,
     isLoading: false,
-    weatherCurrent: undefined
+    weatherCurrent: {
+        coord: {
+            lat: 49.45,
+            lon: 11.083333
+        },
+        weather: [],
+        base: "",
+        main: {
+            temp: 12.27,
+            temp_min: 11.4,
+            temp_max: 13.5,
+            temp_kf: 0,
+            pressure: 1031,
+            sea_level: 0,
+            grnd_level: 0,
+            humidity: 46
+        },
+        visibility: 0,
+        wind: {
+            speed: 0
+        },
+        clouds: {
+            all: 0
+        },
+        dt: 0,
+        sys: {
+            type: 0,
+            id: 0,
+            message: 0,
+            country: "",
+            sunrise: 0,
+            sunset: 0,
+        },
+        id: 0,
+        name: "",
+        cod: 0,
+        weatherCondition: WeatherCondition.clear
+    }
 };
 
 const getters: GetterTree<WeatherCurrentState, RootState> = {
