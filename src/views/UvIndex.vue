@@ -8,7 +8,7 @@
       </v-list-item-content>
 
       <v-list-item-avatar tile size="80" color="primary">
-        <v-img src="@/assets/uv_index.png"></v-img>
+        <v-img src="/assets/uv_index.png"></v-img>
       </v-list-item-avatar>
     </v-list-item>
   </v-card>
@@ -30,18 +30,14 @@ import { UvIndex } from "@/models";
     coordinatesString(uvIndex: UvIndex) {
       return !!uvIndex
         ? `Coordinates: Lat: ${uvIndex.lat}, Lon: ${uvIndex.lon}`
-        : "n.a.";
+        : "Coordinates: n.a.";
     },
     valueString(uvIndex: UvIndex) {
       return !!uvIndex ? uvIndex.value : "n.a.";
     }
   }
 })
-export default class UvIndexComponent extends Vue {
-  constructor() {
-    super();
-  }
-}
+export default class UvIndexComponent extends Vue {}
 </script>
 
 <style lang="scss" scoped>

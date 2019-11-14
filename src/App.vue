@@ -7,13 +7,21 @@
         </v-card-title>
 
         <v-tabs v-model="tab" background-color="deep-purple accent-4" center-active dark>
-          <v-tab key="uv-index">UvIndex</v-tab>
+          <v-tab key="city">City</v-tab>
+          <v-tab key="weather-current">Current Weather</v-tab>
+          <v-tab key="uv-index">Uv Index</v-tab>
         </v-tabs>
 
         <v-tabs-items v-model="tab">
           <v-container class="fill-height" fluid>
             <v-row align="center" justify="center">
               <v-col cols="12" sm="8" md="4">
+                <v-tab-item key="city">
+                  <CityComponent />
+                </v-tab-item>
+                <v-tab-item key="weather-current">
+                  <WeatherCurrentComponent />
+                </v-tab-item>
                 <v-tab-item key="uv-index">
                   <UvIndexComponent />
                 </v-tab-item>
@@ -29,10 +37,12 @@
 <script lang="ts">
 import Vue from "vue";
 import Component from "vue-class-component";
+import CityComponent from "@/views/City.vue";
 import UvIndexComponent from "@/views/UvIndex.vue";
+import WeatherCurrentComponent from "@/views/WeatherCurrent.vue";
 
 @Component({
-  components: { UvIndexComponent },
+  components: { CityComponent, UvIndexComponent, WeatherCurrentComponent },
   data: () => ({
     tab: "uv-index"
   })
