@@ -20,6 +20,7 @@ export * from "./sys";
 export * from "./unsplash-image-response";
 export * from "./uv-index";
 export * from "./viewport";
+export * from "./weather-condition";
 export * from "./weather-current";
 export * from "./weather-forecast-part";
 export * from "./weather-forecast";
