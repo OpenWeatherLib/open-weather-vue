@@ -4,7 +4,6 @@
       <v-list-item-content>
         <div class="overline mb-4">Carbon Monoxide</div>
         <v-list-item-subtitle>{{ carbonMonoxide | coordinatesString }}</v-list-item-subtitle>
-        <div id="co-chart"></div>
       </v-list-item-content>
 
       <v-list-item-avatar tile size="80" color="primary">
