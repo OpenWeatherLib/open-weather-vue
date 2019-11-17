@@ -19,6 +19,7 @@ Vue JS library for downloading and handling data from openweather.
 ![alt tag](screenshots/example-ozone.png)
 ![alt tag](screenshots/example-sulfur-dioxide.png)
 ![alt tag](screenshots/example-uv-index.png)
+![alt tag](screenshots/example-weather-forecast.png)
 
 ---
 
