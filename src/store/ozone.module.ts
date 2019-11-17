@@ -13,12 +13,20 @@ export interface OzoneState {
     ozone?: Ozone;
 }
 
+// TODO Remove dummy data
 const state: OzoneState = {
-    accuracy: undefined,
-    dateTime: undefined,
+    accuracy: 2,
+    dateTime: "Sun Nov 17 13:46:38 2019 UTC",
     error: undefined,
     isLoading: false,
-    ozone: undefined
+    ozone: {
+        dateTime: new Date("Sun Nov 17 13:46:38 2019 UTC"),
+        coordinates: {
+            longitude: 11.083333,
+            latitude: 49.45
+        },
+        data: 259.3334655761719
+    }
 };
 
 const getters: GetterTree<OzoneState, RootState> = {

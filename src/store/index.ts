@@ -5,6 +5,7 @@ import { carbonMonoxideModule } from "./carbon-monoxide.module";
 import { cityModule } from "./city.module";
 import { imageModule } from "./image.module";
 import { nitrogenDioxideModule } from "./nitrogen-dioxide.module";
+import { ozoneModule } from "./ozone.module";
 import { RootState } from "./root-state";
 import { sulfurDioxideModule } from "./sulfur-dioxide.module";
 import { uvIndexModule } from "./uv-index.module";
@@ -19,6 +20,7 @@ const store: StoreOptions<RootState> = {
     cityModule,
     imageModule,
     nitrogenDioxideModule,
+    ozoneModule,
     sulfurDioxideModule,
     uvIndexModule,
     weatherCurrentModule

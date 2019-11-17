@@ -11,6 +11,7 @@
           <v-tab key="city">City</v-tab>
           <v-tab key="weather-current">Current Weather</v-tab>
           <v-tab key="nitrogen-dioxide">Nitrogen Dioxide</v-tab>
+          <v-tab key="ozone">Ozone</v-tab>
           <v-tab key="uv-index">Uv Index</v-tab>
         </v-tabs>
 
@@ -24,11 +25,14 @@
                 <v-tab-item key="city">
                   <CityComponent />
                 </v-tab-item>
+                <v-tab-item key="weather-current">
+                  <WeatherCurrentComponent />
+                </v-tab-item>
                 <v-tab-item key="nitrogen-dioxide">
                   <NitrogenDioxideComponent />
                 </v-tab-item>
-                <v-tab-item key="weather-current">
-                  <WeatherCurrentComponent />
+                <v-tab-item key="ozone">
+                  <OzoneComponent />
                 </v-tab-item>
                 <v-tab-item key="uv-index">
                   <UvIndexComponent />
@@ -48,6 +52,7 @@ import Component from "vue-class-component";
 import CarbonMonoxideComponent from "@/views/CarbonMonoxide.vue";
 import CityComponent from "@/views/City.vue";
 import NitrogenDioxideComponent from "@/views/NitrogenDioxide.vue";
+import OzoneComponent from "@/views/Ozone.vue";
 import UvIndexComponent from "@/views/UvIndex.vue";
 import WeatherCurrentComponent from "@/views/WeatherCurrent.vue";
 
@@ -56,6 +61,7 @@ import WeatherCurrentComponent from "@/views/WeatherCurrent.vue";
     CarbonMonoxideComponent,
     CityComponent,
     NitrogenDioxideComponent,
+    OzoneComponent,
     UvIndexComponent,
     WeatherCurrentComponent
   },
