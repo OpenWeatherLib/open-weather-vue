@@ -3,16 +3,12 @@ import { WeatherForecastPart, WeatherPart } from "@/models";
 
 import { mostWeatherCondition } from "@/helper/weather-forecast.helper";
 
-/*
-
 describe("getWeatherForecastList", () => {
     test.todo("getWeatherForecastList");
 });
 
 describe("mostWeatherCondition", () => {
     test.each([
-        ["should return WeatherCondition.null for undefined", WeatherCondition.null, undefined],
-        ["should return WeatherCondition.null for null", WeatherCondition.null, null],
         ["should return WeatherCondition.null for empty list", WeatherCondition.null, []],
         ["should return WeatherCondition.snow if this is the most in the list", WeatherCondition.snow, [
             { weather: [{ description: "snow" } as WeatherPart] } as WeatherForecastPart,
@@ -27,13 +23,11 @@ describe("mostWeatherCondition", () => {
             { weather: [{ description: "rain" } as WeatherPart] } as WeatherForecastPart,
             { weather: [{ description: "sun" } as WeatherPart] } as WeatherForecastPart]
         ]
-    ])("%s", (_: string, expected: WeatherCondition, list: WeatherForecastPart[]) => {
+    ])("%s", (_, expected, list) => {
         // Arrange + Act
-        const actual: WeatherCondition = mostWeatherCondition(list);
+        const actual: WeatherCondition = mostWeatherCondition(list as WeatherForecastPart[]);
 
         // Assert
         expect(actual).toBe(expected);
     });
 });
-
-*/

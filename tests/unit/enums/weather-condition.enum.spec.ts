@@ -1,11 +1,10 @@
 import WeatherCondition from "@/enums/weather-condition.enum";
-
-/*
+import { IWeatherCondition } from "@/models";
 
 describe("values", () => {
     test("should not change unexpected", () => {
         // Arrange + Act
-        const actual: WeatherCondition[] = WeatherCondition.values;
+        const actual: IWeatherCondition[] = WeatherCondition.values;
 
         // Assert
         expect(actual).toMatchSnapshot([
@@ -41,15 +40,12 @@ describe("getByDescription", () => {
         [{ id: 10, description: "Squalls", wallpaper: "/assets/weather_wallpaper_squalls.png", icon: "/assets/weather_squalls.png", count: 0 }, "squalls"],
         [{ id: 11, description: "Sun", wallpaper: "/assets/weather_wallpaper_sun.png", icon: "/assets/weather_sun.png", count: 0 }, "sun"],
         [{ id: 12, description: "Thunderstorm", wallpaper: "/assets/weather_wallpaper_thunderstorm.png", icon: "/assets/weather_thunderstorm.png", count: 0 }, "thunderstorm"],
-        [{ id: 0, description: "Null", wallpaper: "/assets/weather_wallpaper_dummy.png", icon: "/assets/weather_dummy.png", count: 0 }, "fake"],
-        [{ id: 0, description: "Null", wallpaper: "/assets/weather_wallpaper_dummy.png", icon: "/assets/weather_dummy.png", count: 0 }, undefined]
-    ])("should return WeatherCondition %s for description %s", (expected: WeatherCondition, description: string) => {
+        [{ id: 0, description: "Null", wallpaper: "/assets/weather_wallpaper_dummy.png", icon: "/assets/weather_dummy.png", count: 0 }, "fake"]
+    ])("should return WeatherCondition %s for description %s", (expected, description) => {
         // Arrange & Act
-        const actual: WeatherCondition = WeatherCondition.getByDescription(description);
+        const actual: IWeatherCondition = WeatherCondition.getByDescription(description as string);
 
         // Assert
         expect(actual).toStrictEqual(expected);
-    })
+    });
 });
-
-*/
