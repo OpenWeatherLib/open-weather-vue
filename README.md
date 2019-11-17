@@ -5,18 +5,14 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 [![Paypal](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/GuepardoApps)
 
-[![Version](https://img.shields.io/badge/version-0.1.0-yellow.svg)](src)
-[![Build](https://img.shields.io/badge/build-notavailable-blue.svg)](src)
-
-[![CodeCoverageStatements](https://img.shields.io/badge/Statements-0%25-red.svg)](src)
-[![CodeCoverageBranch](https://img.shields.io/badge/Branch-0%25-red.svg)](src)
-[![CodeCoverageFunctions](https://img.shields.io/badge/Functions-0%25-red.svg)](src)
-[![CodeCoverageLines](https://img.shields.io/badge/Lines-0%25-red.svg)](src)
+[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](src)
+[![Build](https://img.shields.io/badge/build-warnings-yellow.svg)](src)
 
 Vue JS library for downloading and handling data from openweather.
 
 ---
 
+![alt tag](screenshots/example-carbon-monoxide.png)
 ![alt tag](screenshots/example-city.png)
 ![alt tag](screenshots/example-current-weather.png)
 ![alt tag](screenshots/example-uv-index.png)
