@@ -13,12 +13,33 @@ export interface NitrogenDioxideState {
     nitrogenDioxide?: NitrogenDioxide;
 }
 
+// TODO Remove dummy data
 const state: NitrogenDioxideState = {
-    accuracy: undefined,
-    dateTime: undefined,
+    accuracy: 2,
+    dateTime: "Sun Nov 17 13:46:38 2019 UTC",
     error: undefined,
     isLoading: false,
-    nitrogenDioxide: undefined
+    nitrogenDioxide: {
+        dateTime: new Date("Sun Nov 17 13:46:38 2019 UTC"),
+        coordinates: {
+            longitude: 11.083333,
+            latitude: 49.45
+        },
+        data: {
+            no2: {
+                precision: 1.436401748934656e+15,
+                value: 2.550915831693312e+15
+            },
+            no2_strat: {
+                precision: 2.00000000753664e+14,
+                value: 1.780239650783232e+15
+            },
+            no2_trop: {
+                precision: 1.464945698930688e+15,
+                value: 7.7067618091008e+14
+            }
+        }
+    }
 };
 
 const getters: GetterTree<NitrogenDioxideState, RootState> = {

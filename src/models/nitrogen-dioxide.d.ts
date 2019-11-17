@@ -4,5 +4,5 @@ import { Coordinates3 } from "@/models/coordinates3";
 export interface NitrogenDioxide {
     dateTime: Date;
     coordinates: Coordinates3;
-    data: NitrogenDioxideData[];
+    data: NitrogenDioxideData;
 }
