@@ -1,10 +1,10 @@
 import { Clouds } from "@/models/clouds";
 import { Main } from "@/models/main";
 import { Rain } from "@/models/rain";
+import { Sys } from "@/models/sys";
 import { WeatherPart } from "@/models/weather-part";
 import { Wind } from "@/models/wind";
-
-import WeatherCondition from "@/enums/weather-condition.enum";
+import { IWeatherCondition } from "@/models/weather-condition";
 
 export interface WeatherForecastPart {
     dt: number;
@@ -12,7 +12,8 @@ export interface WeatherForecastPart {
     weather: WeatherPart[];
     clouds: Clouds;
     wind: Wind;
-    rain: Rain;
+    rain?: Rain;
     dt_txt: string;
-    weatherCondition: WeatherCondition;
+    weatherCondition?: IWeatherCondition;
+    sys: Sys;
 }

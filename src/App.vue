@@ -14,12 +14,13 @@
           <v-tab key="ozone">Ozone</v-tab>
           <v-tab key="sulfur-dioxide">Sulfur Dioxide</v-tab>
           <v-tab key="uv-index">Uv Index</v-tab>
+          <v-tab key="weather-forecast">Weather Forecast</v-tab>
         </v-tabs>
 
         <v-tabs-items v-model="tab">
           <v-container class="fill-height" fluid>
             <v-row align="center" justify="center">
-              <v-col cols="12" sm="8" md="4">
+              <v-col cols="12" sm="8" :md="tab | mdCalc">
                 <v-tab-item key="carbon-monoxide">
                   <CarbonMonoxideComponent />
                 </v-tab-item>
@@ -41,6 +42,9 @@
                 <v-tab-item key="uv-index">
                   <UvIndexComponent />
                 </v-tab-item>
+                <v-tab-item key="weather forecast">
+                  <WeatherForecastComponent />
+                </v-tab-item>
               </v-col>
             </v-row>
           </v-container>
@@ -60,6 +64,7 @@ import OzoneComponent from "@/views/Ozone.vue";
 import SulfurDioxideComponent from "@/views/SulfurDioxide.vue";
 import UvIndexComponent from "@/views/UvIndex.vue";
 import WeatherCurrentComponent from "@/views/WeatherCurrent.vue";
+import WeatherForecastComponent from "@/views/WeatherForecast.vue";
 
 @Component({
   components: {
@@ -69,11 +74,17 @@ import WeatherCurrentComponent from "@/views/WeatherCurrent.vue";
     OzoneComponent,
     SulfurDioxideComponent,
     UvIndexComponent,
-    WeatherCurrentComponent
+    WeatherCurrentComponent,
+    WeatherForecastComponent
   },
   data: () => ({
-    tab: "uv-index"
-  })
+    tab: 2
+  }),
+  filters: {
+    mdCalc(tab: number) {
+      return tab === 7 ? 12 : 4;
+    }
+  }
 })
 export default class App extends Vue {
   constructor() {

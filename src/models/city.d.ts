@@ -6,4 +6,7 @@ export interface City {
   country: string;
   population: number;
   coord: Coordinates;
+  timezone: number;
+  sunrise: number;
+  sunset: number;
 }

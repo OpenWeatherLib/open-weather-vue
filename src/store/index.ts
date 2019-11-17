@@ -10,6 +10,7 @@ import { RootState } from "./root-state";
 import { sulfurDioxideModule } from "./sulfur-dioxide.module";
 import { uvIndexModule } from "./uv-index.module";
 import { weatherCurrentModule } from "./weather-current.module";
+import { weatherForecastModule } from "./weather-forecast.module";
 
 Vue.use(Vuex);
 
@@ -23,7 +24,8 @@ const store: StoreOptions<RootState> = {
     ozoneModule,
     sulfurDioxideModule,
     uvIndexModule,
-    weatherCurrentModule
+    weatherCurrentModule,
+    weatherForecastModule
   }
 };
 
