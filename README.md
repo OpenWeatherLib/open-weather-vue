@@ -5,21 +5,22 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 [![Paypal](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/GuepardoApps)
 
-[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](src)
-[![Build](https://img.shields.io/badge/build-warnings-yellow.svg)](src)
+[![Version](https://img.shields.io/badge/version-20.3.11-blue.svg)](src)
+[![Build](https://img.shields.io/badge/build-success-green.svg)](src)
 
 Vue JS library for downloading and handling data from openweather.
 
 ---
 
-![alt tag](screenshots/example-carbon-monoxide.png)
-![alt tag](screenshots/example-city.png)
-![alt tag](screenshots/example-current-weather.png)
-![alt tag](screenshots/example-nitrogen-dioxide.png)
-![alt tag](screenshots/example-ozone.png)
-![alt tag](screenshots/example-sulfur-dioxide.png)
-![alt tag](screenshots/example-uv-index.png)
-![alt tag](screenshots/example-weather-forecast.png)
+## Light Theme
+
+![Wallpaper Light 1](./wallpaper-light-1.jpg)
+![Wallpaper Light 2](./wallpaper-light-2.jpg)
+
+## Dark Theme
+
+![Wallpaper Dark 1](./wallpaper-dark-1.jpg)
+![Wallpaper Dark 2](./wallpaper-dark-2.jpg)
 
 ---
 
