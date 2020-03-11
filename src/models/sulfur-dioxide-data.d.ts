@@ -1,5 +1,5 @@
 export interface SulfurDioxideData {
-    precision: number;
-    pressure: number;
-    value: number;
+  precision: number;
+  pressure: number;
+  value: number;
 }

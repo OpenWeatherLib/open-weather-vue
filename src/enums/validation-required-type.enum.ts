@@ -1,7 +1,7 @@
 export enum ValidationRequiredType {
-    Array,
-    Enum,
-    Int,
-    Object,
-    String
+  Array,
+  Enum,
+  Int,
+  Object,
+  String
 }

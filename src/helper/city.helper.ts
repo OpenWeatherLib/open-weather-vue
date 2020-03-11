@@ -1,3 +1,5 @@
+/*eslint-disable */
+
 import { City } from "@/models";
 import { isNullOrEmpty } from "./string.helper";
 

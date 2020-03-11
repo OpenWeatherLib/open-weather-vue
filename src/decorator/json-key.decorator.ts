@@ -1,4 +1,5 @@
 // Great Help: https://github.com/Microsoft/TypeScript-Handbook/blob/master/pages/Decorators.md
+/*eslint-disable */
 
 import "reflect-metadata";
 

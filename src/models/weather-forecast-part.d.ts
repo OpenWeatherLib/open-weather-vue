@@ -7,13 +7,13 @@ import { Wind } from "@/models/wind";
 import { IWeatherCondition } from "@/models/weather-condition";
 
 export interface WeatherForecastPart {
-    dt: number;
-    main: Main;
-    weather: WeatherPart[];
-    clouds: Clouds;
-    wind: Wind;
-    rain?: Rain;
-    dt_txt: string;
-    weatherCondition?: IWeatherCondition;
-    sys: Sys;
+  dt: number;
+  main: Main;
+  weather: WeatherPart[];
+  clouds: Clouds;
+  wind: Wind;
+  rain?: Rain;
+  dt_txt: string;
+  weatherCondition?: IWeatherCondition;
+  sys: Sys;
 }

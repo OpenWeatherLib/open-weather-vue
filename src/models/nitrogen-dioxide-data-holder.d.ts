@@ -1,4 +1,4 @@
 export interface NitrogenDioxideDataHolder {
-    precision: number;
-    value: number;
+  precision: number;
+  value: number;
 }

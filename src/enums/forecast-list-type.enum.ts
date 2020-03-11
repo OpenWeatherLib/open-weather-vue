@@ -1,5 +1,5 @@
 export enum ForecastListType {
-    Null,
-    Forecast,
-    DateDivider
+  Null,
+  Forecast,
+  DateDivider
 }

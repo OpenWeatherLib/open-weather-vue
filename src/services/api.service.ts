@@ -1,4 +1,5 @@
-import axios from 'axios';
+/* eslint-disable */
+import axios from "axios";
 import { from, Observable, of } from "rxjs";
 import { catchError, map } from "rxjs/operators";
 
