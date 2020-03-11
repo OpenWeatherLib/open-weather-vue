@@ -3,19 +3,33 @@
     <v-list-item three-line>
       <v-list-item-content>
         <div class="overline mb-4">Nitrogen Dioxide</div>
-        <v-list-item-subtitle>{{ nitrogenDioxide | coordinatesString }}</v-list-item-subtitle>
+        <v-list-item-subtitle v-once>
+          {{ nitrogenDioxide | coordinatesString }}
+        </v-list-item-subtitle>
         <div class="overline mb-6"></div>
-        <v-list-item-title>{{ nitrogenDioxide | valueString }}</v-list-item-title>
+        <v-list-item-title v-once>
+          {{ nitrogenDioxide | valueString }}
+        </v-list-item-title>
         <div class="overline mb-6">Value</div>
-        <v-list-item-title>{{ nitrogenDioxide | precisionString }}</v-list-item-title>
+        <v-list-item-title v-once>
+          {{ nitrogenDioxide | precisionString }}
+        </v-list-item-title>
         <div class="overline mb-6">Precision</div>
-        <v-list-item-title>{{ nitrogenDioxide | valueStratString }}</v-list-item-title>
+        <v-list-item-title v-once>
+          {{ nitrogenDioxide | valueStratString }}
+        </v-list-item-title>
         <div class="overline mb-6">Value (Strat)</div>
-        <v-list-item-title>{{ nitrogenDioxide | precisionStratString }}</v-list-item-title>
+        <v-list-item-title v-once>
+          {{ nitrogenDioxide | precisionStratString }}
+        </v-list-item-title>
         <div class="overline mb-6">Precision (Strat)</div>
-        <v-list-item-title>{{ nitrogenDioxide | valueTropString }}</v-list-item-title>
+        <v-list-item-title v-once>
+          {{ nitrogenDioxide | valueTropString }}
+        </v-list-item-title>
         <div class="overline mb-6">Value (Trop)</div>
-        <v-list-item-title>{{ nitrogenDioxide | precisionTropString }}</v-list-item-title>
+        <v-list-item-title v-once>
+          {{ nitrogenDioxide | precisionTropString }}
+        </v-list-item-title>
         <div class="overline mb-6">Precision (Trop)</div>
       </v-list-item-content>
 
@@ -77,6 +91,3 @@ import { NitrogenDioxide } from "@/models";
 })
 export default class NitrogenDioxideComponent extends Vue {}
 </script>
-
-<style lang="scss" scoped>
-</style>

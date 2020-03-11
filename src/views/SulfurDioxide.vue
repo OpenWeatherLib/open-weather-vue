@@ -3,7 +3,9 @@
     <v-list-item three-line>
       <v-list-item-content>
         <div class="overline mb-4">Sulfur Dioxide</div>
-        <v-list-item-subtitle>{{ sulfurDioxide | coordinatesString }}</v-list-item-subtitle>
+        <v-list-item-subtitle v-once>
+          {{ sulfurDioxide | coordinatesString }}
+        </v-list-item-subtitle>
       </v-list-item-content>
 
       <v-list-item-avatar tile size="80" color="primary">
@@ -12,10 +14,10 @@
     </v-list-item>
 
     <v-card-text>
-      <v-sheet color="rgba(0, 0, 0, .12)">
+      <v-sheet color="accent">
         <v-sparkline
           :value="sulfurDioxideData"
-          color="rgba(255, 255, 255, .7)"
+          color="purple"
           height="150"
           padding="24"
           stroke-linecap="round"
@@ -50,6 +52,3 @@ import { SulfurDioxide, SulfurDioxideData } from "@/models";
 })
 export default class SulfurDioxideComponent extends Vue {}
 </script>
-
-<style lang="scss" scoped>
-</style>

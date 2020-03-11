@@ -4,9 +4,12 @@
       <v-img
         class="white--text align-end"
         height="200px"
+        v-once
         :src="mostWeatherCondition | wallpaperUrl"
       >
-        <v-card-title>{{ mostWeatherCondition | descriptionString}}</v-card-title>
+        <v-card-title v-once>
+          {{ mostWeatherCondition | descriptionString }}
+        </v-card-title>
       </v-img>
       <v-card-subtitle class="pb-0">Weather Forecast</v-card-subtitle>
     </v-card>
@@ -14,10 +17,10 @@
       <v-card class="weather-forecast-card" outlined>
         <v-card-subtitle class="pb-0">Temperature Forecast</v-card-subtitle>
         <v-card-text>
-          <v-sheet color="rgba(0, 0, 0, .12)">
+          <v-sheet color="accent">
             <v-sparkline
               :value="trendTemperature"
-              color="rgba(255, 255, 255, .7)"
+              color="purple"
               height="150"
               padding="24"
               stroke-linecap="round"
@@ -29,10 +32,10 @@
       <v-card class="weather-forecast-card" outlined>
         <v-card-subtitle class="pb-0">Humidity Forecast</v-card-subtitle>
         <v-card-text>
-          <v-sheet color="rgba(0, 0, 0, .12)">
+          <v-sheet color="accent">
             <v-sparkline
               :value="trendHumidity"
-              color="rgba(255, 255, 255, .7)"
+              color="blue"
               height="150"
               padding="24"
               stroke-linecap="round"
@@ -44,10 +47,10 @@
       <v-card class="weather-forecast-card" outlined>
         <v-card-subtitle class="pb-0">Pressure Forecast</v-card-subtitle>
         <v-card-text>
-          <v-sheet color="rgba(0, 0, 0, .12)">
+          <v-sheet color="accent">
             <v-sparkline
               :value="trendPressure"
-              color="rgba(255, 255, 255, .7)"
+              color="black"
               height="150"
               padding="24"
               stroke-linecap="round"

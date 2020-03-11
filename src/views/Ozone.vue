@@ -3,8 +3,12 @@
     <v-list-item three-line>
       <v-list-item-content>
         <div class="overline mb-4">Ozone</div>
-        <v-list-item-title class="headline mb-1">{{ ozone | valueString }}</v-list-item-title>
-        <v-list-item-subtitle>{{ ozone | coordinatesString }}</v-list-item-subtitle>
+        <v-list-item-title class="headline mb-1" v-once>
+          {{ ozone | valueString }}
+        </v-list-item-title>
+        <v-list-item-subtitle v-once>
+          {{ ozone | coordinatesString }}
+        </v-list-item-subtitle>
       </v-list-item-content>
 
       <v-list-item-avatar tile size="80" color="primary">
@@ -38,6 +42,3 @@ import { Ozone } from "@/models";
 })
 export default class OzoneComponent extends Vue {}
 </script>
-
-<style lang="scss" scoped>
-</style>

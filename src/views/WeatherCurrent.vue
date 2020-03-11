@@ -1,13 +1,20 @@
 <template>
   <v-card class="mx-auto" max-width="344" outlined>
-    <v-img class="white--text align-end" height="200px" :src="weatherCurrent | wallpaperUrl">
-      <v-card-title>{{ weatherCurrent | descriptionString}}</v-card-title>
+    <v-img
+      class="white--text align-end"
+      height="200px"
+      v-once
+      :src="weatherCurrent | wallpaperUrl"
+    >
+      <v-card-title v-once>
+        {{ weatherCurrent | descriptionString }}
+      </v-card-title>
     </v-img>
     <v-card-subtitle class="pb-0">Current Weather</v-card-subtitle>
     <v-card-text class="text--primary">
-      <div>{{ weatherCurrent | temperatureString}}</div>
-      <div>{{ weatherCurrent | pressureString}}</div>
-      <div>{{ weatherCurrent | humidityString}}</div>
+      <div v-once>{{ weatherCurrent | temperatureString }}</div>
+      <div v-once>{{ weatherCurrent | pressureString }}</div>
+      <div v-once>{{ weatherCurrent | humidityString }}</div>
     </v-card-text>
   </v-card>
 </template>
@@ -53,6 +60,3 @@ import { WeatherCurrent } from "@/models";
 })
 export default class WeatherCurrentComponent extends Vue {}
 </script>
-
-<style lang="scss" scoped>
-</style>

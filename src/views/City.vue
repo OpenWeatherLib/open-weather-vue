@@ -1,13 +1,13 @@
 <template>
   <v-card class="mx-auto" max-width="344" outlined>
     <v-img class="white--text align-end" height="200px" :src="wallpaperUrl">
-      <v-card-title>{{ city | nameString}}</v-card-title>
+      <v-card-title v-once>{{ city | nameString }}</v-card-title>
     </v-img>
     <v-card-subtitle class="pb-0">City</v-card-subtitle>
     <v-card-text class="text--primary">
-      <div>{{ city | countryString}}</div>
-      <div>{{ city | populationString}}</div>
-      <div>{{ city | coordinatesString}}</div>
+      <div v-once>{{ city | countryString }}</div>
+      <div v-once>{{ city | populationString }}</div>
+      <div v-once>{{ city | coordinatesString }}</div>
     </v-card-text>
   </v-card>
 </template>
@@ -45,6 +45,3 @@ import { City } from "@/models";
 })
 export default class CityComponent extends Vue {}
 </script>
-
-<style lang="scss" scoped>
-</style>

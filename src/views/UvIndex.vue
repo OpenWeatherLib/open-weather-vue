@@ -3,8 +3,12 @@
     <v-list-item three-line>
       <v-list-item-content>
         <div class="overline mb-4">UV Index</div>
-        <v-list-item-title class="headline mb-1">{{ uvIndex | valueString }}</v-list-item-title>
-        <v-list-item-subtitle>{{ uvIndex | coordinatesString }}</v-list-item-subtitle>
+        <v-list-item-title class="headline mb-1" v-once>
+          {{ uvIndex | valueString }}
+        </v-list-item-title>
+        <v-list-item-subtitle v-once>
+          {{ uvIndex | coordinatesString }}
+        </v-list-item-subtitle>
       </v-list-item-content>
 
       <v-list-item-avatar tile size="80" color="primary">
@@ -38,6 +42,3 @@ import { UvIndex } from "@/models";
 })
 export default class UvIndexComponent extends Vue {}
 </script>
-
-<style lang="scss" scoped>
-</style>

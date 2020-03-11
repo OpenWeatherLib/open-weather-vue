@@ -1,22 +1,27 @@
 <template>
   <v-app>
-    <v-content style="margin: 0.5rem;">
-      <v-card style="height: calc(100vh - 1rem);">
-        <v-card-title class="text-center justify-center py-6">
-          <h1 class="font-weight-bold display-3 basil--text">OpenWeather</h1>
-        </v-card-title>
+    <v-app-bar app clipped-left color="primary" dark dense>
+      <v-toolbar-title>Open Weather</v-toolbar-title>
+      <v-spacer />
 
-        <v-tabs v-model="tab" background-color="deep-purple accent-4" center-active dark>
-          <v-tab key="carbon-monoxide">Carbon Monoxide</v-tab>
-          <v-tab key="city">City</v-tab>
-          <v-tab key="weather-current">Current Weather</v-tab>
-          <v-tab key="nitrogen-dioxide">Nitrogen Dioxide</v-tab>
-          <v-tab key="ozone">Ozone</v-tab>
-          <v-tab key="sulfur-dioxide">Sulfur Dioxide</v-tab>
-          <v-tab key="uv-index">Uv Index</v-tab>
-          <v-tab key="weather-forecast">Weather Forecast</v-tab>
+      <template v-slot:extension>
+        <!-- eslint-disable -->
+        <v-tabs center-active centered color="secondary" icons-and-text show-arrows v-model="tab">
+          <AvatarTab name="Carbon Monoxide" src="/assets/carbon_monoxide.png" />
+          <AvatarTab name="City" src="/assets/city.svg" />
+          <AvatarTab name="Current Weather" src="/assets/weather_dummy.png" />
+          <AvatarTab name="Nitrogen Dioxide" src="/assets/nitrogen_dioxide.png" />
+          <AvatarTab name="Ozone" src="/assets/ozone.png" />
+          <AvatarTab name="Sulfur Dioxide" src="/assets/sulfur_dioxide.png" />
+          <AvatarTab name="Uv Index" src="/assets/uv_index.png" />
+          <AvatarTab name="Weather Forecast" src="/assets/weather_dummy.png" />
         </v-tabs>
+        <!-- eslint-enable -->
+      </template>
+    </v-app-bar>
 
+    <v-content class="ma-1">
+      <v-card class="ma-auto elevation-8" style="height: 80vh; width: 80vw;">
         <v-tabs-items v-model="tab">
           <v-container class="fill-height" fluid>
             <v-row align="center" justify="center">
@@ -51,12 +56,23 @@
         </v-tabs-items>
       </v-card>
     </v-content>
+
+    <v-footer app color="accent">
+      <v-switch
+        :label="$vuetify.theme.dark ? 'Dark theme' : 'Light theme'"
+        class="ma-0"
+        dense
+        hide-details
+        v-model="$vuetify.theme.dark"
+      ></v-switch>
+    </v-footer>
   </v-app>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import Component from "vue-class-component";
+import AvatarTab from "@/controls/AvatarTab.vue";
 import CarbonMonoxideComponent from "@/views/CarbonMonoxide.vue";
 import CityComponent from "@/views/City.vue";
 import NitrogenDioxideComponent from "@/views/NitrogenDioxide.vue";
@@ -68,6 +84,7 @@ import WeatherForecastComponent from "@/views/WeatherForecast.vue";
 
 @Component({
   components: {
+    AvatarTab,
     CarbonMonoxideComponent,
     CityComponent,
     NitrogenDioxideComponent,
